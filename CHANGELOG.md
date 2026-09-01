@@ -1,6 +1,97 @@
 # CHANGELOG
 
-## [Unreleased](https://github.com/bridgecrewio/checkov/compare/3.2.532...HEAD)
+## [Unreleased](https://github.com/bridgecrewio/checkov/compare/3.3.16...HEAD)
+
+## [3.3.16](https://github.com/bridgecrewio/checkov/compare/3.3.15...3.3.16) - 2026-08-30
+
+### Bug Fix
+
+- **terraform:** Added current Azure Terraform resources and taggable resources as of hashicorp/azurerm provider version 4.81 - [#7652](https://github.com/bridgecrewio/checkov/pull/7652)
+
+## [3.3.15](https://github.com/bridgecrewio/checkov/compare/3.3.13...3.3.15) - 2026-08-27
+
+### Bug Fix
+
+- **sca:** match CVE suppressions case-insensitively - [#7659](https://github.com/bridgecrewio/checkov/pull/7659)
+- **sca:** match CvesAccounts suppressions on unprefixed account ids - [#7660](https://github.com/bridgecrewio/checkov/pull/7660)
+
+## [3.3.13](https://github.com/bridgecrewio/checkov/compare/3.3.12...3.3.13) - 2026-08-20
+
+### Bug Fix
+
+- **kubernetes:** Fix K8S suppressions annotations - [#7651](https://github.com/bridgecrewio/checkov/pull/7651)
+
+## [3.3.12](https://github.com/bridgecrewio/checkov/compare/3.3.9...3.3.12) - 2026-08-19
+
+### Bug Fix
+
+- **sca:** correct Windows path handling in image referencer - [#7650](https://github.com/bridgecrewio/checkov/pull/7650)
+
+## [3.3.9](https://github.com/bridgecrewio/checkov/compare/3.3.8...3.3.9) - 2026-08-02
+
+### Bug Fix
+
+- **terraform:** handle null container_properties in aws_batch_job_def… - [#7636](https://github.com/bridgecrewio/checkov/pull/7636)
+
+## [3.3.8](https://github.com/bridgecrewio/checkov/compare/3.3.7...3.3.8) - 2026-07-09
+
+### Bug Fix
+
+- **kubernetes:** CKV_K8S_40 should pass when hostUsers is false - [#7580](https://github.com/bridgecrewio/checkov/pull/7580)
+
+## [3.3.7](https://github.com/bridgecrewio/checkov/compare/3.3.6...3.3.7) - 2026-07-07
+
+### Feature
+
+- **general:** fix github only output for sca - [#7598](https://github.com/bridgecrewio/checkov/pull/7598)
+
+## [3.3.6](https://github.com/bridgecrewio/checkov/compare/3.3.5...3.3.6) - 2026-06-30
+
+### Bug Fix
+
+- **terraform:** prevent crash in S3AllowsAnyPrincipal with unparsed v… - [#7581](https://github.com/bridgecrewio/checkov/pull/7581)
+
+## [3.3.5](https://github.com/bridgecrewio/checkov/compare/3.3.2...3.3.5) - 2026-06-29
+
+### Feature
+
+- **general:** fix danger node version - [#7589](https://github.com/bridgecrewio/checkov/pull/7589)
+
+### Bug Fix
+
+- **general:** retry kustomize/helm install to survive transient GitHub failures - [#7591](https://github.com/bridgecrewio/checkov/pull/7591)
+- **terraform:** CKV_AZURE_190 override singular get_expected_value - [#7592](https://github.com/bridgecrewio/checkov/pull/7592)
+
+## [3.3.2](https://github.com/bridgecrewio/checkov/compare/3.3.1...3.3.2) - 2026-06-23
+
+### Bug Fix
+
+- **terraform_plan:** handle computed log_bucket in CKV_GCP_62 and CKV_GCP_63 - [#7582](https://github.com/bridgecrewio/checkov/pull/7582)
+- **terraform:** pass CKV_GCP_123 when remove_default_node_pool is true - [#7575](https://github.com/bridgecrewio/checkov/pull/7575)
+
+## [3.3.1](https://github.com/bridgecrewio/checkov/compare/3.3.0...3.3.1) - 2026-06-11
+
+### Feature
+
+- **serverless:** disable vars opt out - [#7574](https://github.com/bridgecrewio/checkov/pull/7574)
+
+## [3.3.0](https://github.com/bridgecrewio/checkov/compare/3.2.534...3.3.0) - 2026-06-10
+
+- no noteworthy changes
+
+## [3.2.534](https://github.com/bridgecrewio/checkov/compare/3.2.533...3.2.534) - 2026-06-09
+
+### Feature
+
+- **general:** fix regex to include hyphen - [#7566](https://github.com/bridgecrewio/checkov/pull/7566)
+
+## [3.2.533](https://github.com/bridgecrewio/checkov/compare/3.2.532...3.2.533) - 2026-06-04
+
+### Bug Fix
+
+- **general:** increase domain allow list as it blocks prisma release - [#7567](https://github.com/bridgecrewio/checkov/pull/7567)
+- **sca:** Kustomize and Helm improvements - [#7568](https://github.com/bridgecrewio/checkov/pull/7568)
+- **terraform:** pin security-group module to 5.3.1 in linked-module test - [#7570](https://github.com/bridgecrewio/checkov/pull/7570)
 
 ## [3.2.532](https://github.com/bridgecrewio/checkov/compare/3.2.531...3.2.532) - 2026-06-02
 
